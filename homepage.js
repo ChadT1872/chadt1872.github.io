@@ -55,7 +55,7 @@ var n = 0;
 // This function creates two arrays for the AI Art images and image names. It then uses a nested function to iterate through each image as
 // as a user clicks the Next button or Last button.
 function loadArt(e) {
-    var artsources = ["assets/moonthief.PNG", "assets/moonthief_2.PNG", "assets/spaceanimals.jpg", "assets/ScribingontheWalls.png", "assets/oldman.jpg", "assets/kidandmonster.jpg", "assets/kidandmonster_2.jpg", "assets/GrimReaper.png", "assets/GrimReaper1.png", "assets/GhostinLibrary.png", "assets/EgyptianHeads.png", "assets/diseases.PNG", "assets/BohdiSpaceTree.png"];
+    var artsources = ["assets/moonthief.PNG", "assets/moonthief_2.PNG", "assets/spaceanimals.png", "assets/ScribingontheWalls.png", "assets/oldman.png", "assets/kidandmonster.png", "assets/kidandmonster2.png", "assets/GrimReaper.png", "assets/GrimReaper1.png", "assets/GhostinLibrary.png", "assets/EgyptianHeads.png", "assets/diseases.png", "assets/BohdiSpaceTree.png", "submarine.png"];
     var artname = ["Moon Thief", "Older Moon Thief", "Space Animals", "Scribing on the Walls", "old man", "Kid & Monster", "Kid & Monster: 2nd Evolution", "Grim Reaper", "Grim Reaper 2", "Library Ghost", "Egyptian Bald", "Humanoid Diseases", "Bohdi Space Tree"];
     var img = document.getElementById("aiartimg");
     var imgtext = document.getElementById("aiartname");
