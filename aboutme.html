@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Linking Google Fonts, bootstrap style sheet, bootstrap script, my own written homepage.js script. Sets configuration for page
+    and set viewport to make page responsive to screen size.  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower%7CSource+Code+Pro%7CHanalei+Fill">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="homepage.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me</title>
+</head>
+
+<body>
+    <!-- Used sticky-top variant of nav class from bootstrap. Created unordered list and nested each menu selection as list item per the documentation-->
+    <nav class="navbar sticky-top navbar-dark" style="background-color: #003459;">
+        <div style="padding-left: 65px;">
+            <img class="titlepic" alt="CTlogo" src="assets/CT.svg" style="padding: 6px;">
+            <img alt="pipe" src="assets/pipe.svg" style="padding: 3px;">
+            <img class="titlepic" alt="aboutme" src="assets/aboutme.svg">
+        </div>
+        <ul class="nav" id="ulnav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">|Home|<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">|About Me|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html">|Career|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">|Dogs|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aiart.html">|AI Art|</a>
+            </li>
+        </ul>
+        <!-- Time written in top left corner (or bottom of menu if mobile) served from a function in the homepage.js script file. This
+        time ticks by the second live per the function. There is also some fanciness that was done to the numbers to convert it from 24
+        hour, add meridiem, etc. -->
+        <p class="time" id="time"></p>
+    </nav>
+    <!-- This page body is the About Me section. There is a h3 element which contains text describing who I am briefly. Below this description
+    there are 4 pictures beneath another h element and then below one more h element is a picture of my snapcode. -->
+    <div id="page_body" class="container-fluid" style="width: 90vw;">
+        <!-- Date written at top of container served from a function in the homepage.js script file. There is an array of month names
+        and weekday names to write out the day of the week and beneath write out the name of the month followed by the day using ordinal
+        format (which required condtional statements), followed by the year in 4 digit format. -->
+        <p class="date" id="date"></p>
+        <h3 style="text-align: left;"><img alt="portrait" src="assets/portrait.svg"
+                style="width: 150px; max-width: 50vw; float: left; padding-right: 5px;"><br><br><br><br> &nbsp;
+            As you probably know by now, my name is Chad Thweatt. I am currently 32 years old and work as a Systems
+            Administrator at nexAir in Memphis, TN. I was born and raised in Memphis and went to high school at Southern
+            Baptist Educational Center. I am an avid sports fan, specifically am a huge fan of the Memphis Grizzlies and
+            Philadelphia Eagles. One of my favorite hobbies outside of programming related projects is to play guitar.
+            The acoustic sound is what I prefer, so you can find me playing on my Takamine at least 30 minutes to an
+            hour a day. I have written songs, but I am not brave enought to reveal them to anyone... yet. My typical
+            weekend is spent walking/playing with my two dogs, Bellatrix and Xena, working on various projects (both
+            programming and non-programming related), watching/analyzing sports, reading a good book, and spending time
+            with my girlfriend, Breanna. I love playing computer games, but I don't have as much time to play nowadays.
+            When I do have the time, I love to play Destiny 2, Rocket League, & horror games.</h3>
+        <h2><u>Pictures of Me</u></h2>
+        <p style="text-align: center;"><img class="aboutpics" ALT="nephewandme" src="assets/karsonandme.jpg">&nbsp;
+            &nbsp;
+            <img class="aboutpics" alt="bellaandme" src="assets/bellatrixandme.JPG">
+        <p style="text-align: center;"><img class="aboutpics" alt="me" src="assets/me1.jpg">&nbsp; &nbsp;
+            <img class="aboutpics" alt="xenaandme" src="assets/xenaandme.jpg">
+        </p>
+        <h2><u>Add me on Snap!</u></h2>
+        <h2>Since you scrolled to the bottom, you might as well!</h2>
+        <br>
+        <p style="text-align: center"><img id="aboutpics" alt="snapcode" src="assets/snapcode.JPG"></p>
+
+    </div>
+</body>
+
+</html>

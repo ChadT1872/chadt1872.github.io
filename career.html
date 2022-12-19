@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Linking Google Fonts, bootstrap style sheet, bootstrap script, my own written homepage.js script. Sets configuration for page
+    and set viewport to make page responsive to screen size.  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower%7CSource+Code+Pro%7CHanalei+Fill">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="homepage.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Career</title>
+</head>
+
+<body>
+    <!-- Used sticky-top variant of nav class from bootstrap. Created unordered list and nested each menu selection as list item per the documentation-->
+    <nav class="navbar sticky-top navbar-dark" style="background-color: #003459;">
+        <div style="padding-left: 65px;">
+            <img class="titlepic" alt="CTlogo" src="assets/CT.svg" style="padding: 6px;">
+            <img alt="pipe" src="assets/pipe.svg" style="padding: 3px;">
+            <img class="titlepic" alt="career" src="assets/career.svg">
+        </div>
+        <ul class="nav" id="ulnav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">|Home|<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">|About Me|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html">|Career|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">|Dogs|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aiart.html">|AI Art|</a>
+            </li>
+        </ul>
+        <!-- Time written in top left corner (or bottom of menu if mobile) served from a function in the homepage.js script file. This
+        time ticks by the second live per the function. There is also some fanciness that was done to the numbers to convert it from 24
+        hour, add meridiem, etc. -->
+        <p class="time" id="time"></p>
+    </nav>
+    <!-- This page body is a description of my career as well as mentions of my aspirations. I have two pictures which I generated with AI Art via NightCafe which
+    work as quick animations into what I want to do, be a Cloud Developer. -->
+    <div id="page_body" class="container-fluid" style="width: 90vw;">
+        <!-- Date written at top of container served from a function in the homepage.js script file. There is an array of month names
+        and weekday names to write out the day of the week and beneath write out the name of the month followed by the day using ordinal
+        format (which required condtional statements), followed by the year in 4 digit format. -->
+        <p class="date" id="date"></p>
+        <h1><u>Systems Administrator with aspirations to be a Developer</u></h1>
+        <p style="text-align: center;">
+        <table>
+            <tr>
+                <th></th>
+            </tr>
+            <tr>
+                <td>
+                    <p style="text-align: center;"><img alt="devclouds" src="assets/devinclouds.png"
+                            style="max-width: 35vw;">&nbsp;&nbsp;&nbsp;&nbsp;<img alt="adminclouds"
+                            src="assets/cloudadmin.png" style="max-width: 35vw;"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p><br></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="careerdesc">I am currently employed by nexAir, which is a local company in Memphis.
+                        nexAir is an industrial gas and welding supply company which was founded in 1940. We have
+                        around 70 locations ranging between plants to retail stores to distribution centers. I have
+                        been with the company for three years and have enjoyed the investment I have made. My
+                        specific role is Systems Administrator and Support Lead for nexAir's Information Technology
+                        Department. I am the primary Administrator of our instance of Microsoft Endpoint Manager and
+                        I assist in managing various resources in our Azure enviornment. From the Support side, I
+                        lead our HelpDesk to assist in
+                        troubleshooting issues and escalations. The last few months I have been working on a small
+                        team to integrate a data warehouse solution using Azure Synapse. One of my best
+                        accomplishments is building a Windows Presentation Foundation application which runs on all
+                        of our retail counters. This application works as a utility shell for various retail uses,
+                        such as our ERP system. On my personal time, I am working to master Python, SQL, JavaScript,
+                        and C# as I feel those are four fundamental languages which will pave the way for years to
+                        come. I would love to become a Cloud Developer, but my aspiration is to eventually work with
+                        Artificial Intelligence and specifically focus on reducing AI predicability.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

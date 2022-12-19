@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Linking Google Fonts, bootstrap style sheet, bootstrap script, my own written homepage.js script. Sets configuration for page
+    and set viewport to make page responsive to screen size.  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower%7CSource+Code+Pro%7CHanalei+Fill">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="homepage.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dogs</title>
+</head>
+
+<body>
+    <!-- Used sticky-top variant of nav class from bootstrap. Created unordered list and nested each menu selection as list item per the documentation-->
+    <nav class="navbar sticky-top navbar-dark" style="background-color: #003459;">
+        <div style="padding-left: 65px;">
+            <img class="titlepic" alt="CTlogo" src="assets/CT.svg" style="padding: 6px;">
+            <img alt="pipe" src="assets/pipe.svg" style="padding: 3px;">
+            <img class="titlepic" alt="dogs" src="assets/dogs.svg" style="padding-top: 15px;">
+        </div>
+        <ul class="nav" id="ulnav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">|Home|<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">|About Me|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html">|Career|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">|Dogs|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aiart.html">|AI Art|</a>
+            </li>
+        </ul>
+        <!-- Time written in top left corner (or bottom of menu if mobile) served from a function in the homepage.js script file. This
+        time ticks by the second live per the function. There is also some fanciness that was done to the numbers to convert it from 24
+        hour, add meridiem, etc. -->
+        <p class="time" id="time" style="padding-left: 125px;"></p>
+    </nav>
+    <!-- This page body contains h elements and then my two dogs names with 3 pictures and a description beneath their pictures respectively. -->
+    <div id="page_body" class="container-fluid" style="width: 90vw;">
+        <!-- Date written at top of container served from a function in the homepage.js script file. There is an array of month names
+        and weekday names to write out the day of the week and beneath write out the name of the month followed by the day using ordinal
+        format (which required condtional statements), followed by the year in 4 digit format. -->
+        <p class="date" id="date"></p>
+        <h1><u>My Dogs</u></h1>
+        <h3 style="font-size: 40px;">Bellatrix & Xena</h3>
+        <p style="text-align: center;">
+        <table>
+            <tr>
+                <th class="dogname">Xena</th>
+            </tr>
+            <tr>
+                <td><img class="dogspics" alt="xena" src="assets/xena.jpg"><img class="dogspics" alt="xenafilter"
+                        src="assets/xenafilter.jpg"><img alt="xenaandball" class="dogspics"
+                        src="assets/xenaandball.jpg"></td>
+            </tr>
+            <tr>
+                <td class="dogdesc">Xena is a beautiful white dog with bright eyes and a playful personality.
+                    She was named by my nephew Jace, who had never even heard of Xena, The Warrior Princess,
+                    but the name seemed to fit her perfectly. She is strong and brave, and has proven herself to be
+                    a loyal and loving companion to me. When Xena was just three months old, she was originally
+                    supposed
+                    to be my nephew's dog. But due to circumstances at the time, I ended up taking her in as my own.
+                    It was
+                    a decision I would never regret, as Xena quickly became a beloved companion. Xena had an
+                    opportunity once
+                    to display her bravery and strength. When she was just four years old. She had chased after a
+                    squirrel
+                    and unfortunately was hit by a speeding truck. She fled into the woods, and for three days I was
+                    convinced the worst had happened. But then, my mom called to tell me that an older gentleman had
+                    found Xena
+                    the day before and had been taking care of her. We rushed to pick her up, and when we arrived,
+                    we saw that she
+                    had a hole in her chin that needed to be stitched up by the vet. But within weeks, Xena was back
+                    to
+                    her old self, full of energy and ready to play. It is clear to me that Xena has a special
+                    strength and resilience
+                    that allows her to overcome any obstacle. She is a true warrior, and I am grateful to have her
+                    by my side.</td>
+            </tr>
+        </table>
+        <p style="text-align: center;">
+        <table>
+            <tr>
+                <th class="dogname">Bellatrix</th>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;<img class="dogspics" alt="goofybella" src="assets/goofybella.jpg"><img class="dogspics"
+                        alt="girlybella" src="assets/girlybella.jpg"><img class="dogspics" alt="bffdog"
+                        src="assets/bff.JPG"></td>
+            </tr>
+            <tr>
+                <td class="dogdesc">Bellatrix is a playful, happy yet fierce dog, with a wagging tail and a boundless
+                    energy that never seems to waver. She iss a Belgian Malinois mix, with sleek black/brown fur and
+                    piercing brown eyes that seemed to take in everything around her. Bellatrix loves nothing more
+                    than to run and playk, chasing after balls and Frisbees. She iss always the first one to jump
+                    into action when someone suggests a game,
+                    and her enthusiasm is contagious.
+                    But even when she isn't playing, Bellatrix is always happy and full of life. She is a loyal
+                    companion, and loves nothing more than to curl up next to her human friends and be showered with
+                    affection.
+                    Despite her playful nature, Bellatrix is also highly intelligent and could be trained to do
+                    just about anything. She excels agility, and seems to thrive on the
+                    challenge of learning new things. Overall, Bellatrix iss a joy to be around, and her zest for
+                    life is infectious. She iss a
+                    beloved member of the family, and has brought joy and laughter to everyone she met.</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

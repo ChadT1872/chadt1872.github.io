@@ -1,0 +1,143 @@
+body {
+    background-color: #00171F;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+    font-family: "Hanalei Fill", serif;
+    color: #00A7E1;
+}
+
+h2 {
+    text-align: center;
+    color: #00A7E1;
+    font-family: "Hanalei Fill", serif;
+}
+
+h3 {
+    text-align: center;
+    margin: 25px;
+    color: #00A7E1;
+    font-family: 'Indie Flower', serif;
+}
+
+h4 {
+    text-align: center;
+    margin: 25px;
+    color: #00A7E1;
+    font-family: 'Indie Flower', serif;
+}
+
+.aboutpics {
+    max-width: 40vw;
+    max-height: 53.2vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid {
+    width: 80vw;
+}
+
+.center {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.date {
+    text-align: center;
+    margin: 25px;
+    color: #00A7E1;
+    font-family: 'Source Code Pro', serif;
+}
+
+.dogdesc {
+    padding-top: 25px;
+    font-size: 18px;
+    color: #00A7E1;
+    text-align: center;
+    font-family: "Source Code Pro", serif;
+}
+
+.dogname {
+    padding-top: 25px;
+    font-size: 36px;
+    color: #00A7E1;
+    text-align: center;
+    font-family: "Indie Flower", serif;
+}
+
+.dogspics {
+    max-width: 40vw;
+    max-height: 40vw;
+}
+
+.hometext {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 15px;
+    font-size: 10px;
+    font-family: 'Source Code Pro', serif;
+}
+
+.nav-link:hover {
+    background-color: #FFFFFF;
+    color: #007EA7;
+}
+
+.nav-item {
+    color: #FFFFFF;
+}
+
+
+.nav_text {
+    color: #FFFFFF;
+}
+
+.nav-link {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-family: 'Source Code Pro', serif;
+    margin-left: -20px;
+}
+
+.time {
+    text-align: center;
+    padding-left: 110px;
+    margin: 25px;
+    color: #00A7E1;
+    font-family: 'Source Code Pro', serif;
+}
+
+.titlepic {
+    max-width: 40vw;
+    height: auto;
+    padding-left: 6px;
+
+}
+
+#aboutnav:hover {
+    font-size: 9px;
+}
+
+#careerdesc {
+    color: #00A7E1;
+    font-size: 24px;
+    font-family: "Source Code Pro", serif;
+}
+
+#page_body {
+    width: 90vw;
+
+}
+
+#ulnav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+}

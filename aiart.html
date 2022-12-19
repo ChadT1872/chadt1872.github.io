@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- Linking Google Fonts, bootstrap style sheet, bootstrap script, my own written homepage.js script. Sets configuration for page
+    and set viewport to make page responsive to screen size.  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Indie+Flower%7CSource+Code+Pro%7CHanalei+Fill">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="homepage.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Art (made w/ Midjourney)</title>
+</head>
+
+<body id="aiartbody">
+    <!-- Used sticky-top variant of nav class from bootstrap. Created unordered list and nested each menu selection as list item per the documentation-->
+    <nav class="navbar sticky-top navbar-dark" style="background-color: #003459;">
+        <div style="padding-left: 65px;">
+            <img class="titlepic" alt="CTlogo" src="assets/CT.svg" style="padding: 6px;">
+            <img alt="pipe" src="assets/pipe.svg" style="padding: 3px;">
+            <img class="titlepic" alt="aiart" src="assets/aiart.svg">
+        </div>
+        <ul class="nav" id="ulnav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">|Home|<span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aboutme.html">|About Me|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="career.html">|Career|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dogs.html">|Dogs|</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="aiart.html">|AI Art|</a>
+            </li>
+        </ul>
+        <!-- Time written in top left corner (or bottom of menu if mobile) served from a function in the homepage.js script file. This
+        time ticks by the second live per the function. There is also some fanciness that was done to the numbers to convert it from 24
+        hour, add meridiem, etc. -->
+        <p class="time" id="time"></p>
+    </nav>
+    <!-- This page body contains a place for AI art to be displayed, and two buttons to iterate through which AI art to display. -->
+    <div id="page_body" class="container-fluid" style="width: 90vw;">
+        <!-- Date written at top of container served from a function in the homepage.js script file. There is an array of month names
+        and weekday names to write out the day of the week and beneath write out the name of the month followed by the day using ordinal
+        format (which required condtional statements), followed by the year in 4 digit format. -->
+        <p class="date" id="date"></p>
+        <h2><u>AI Art which I generated writing text-prompts with Midjourney</u></h2>
+        <br>
+        <div class="container">
+            <table>
+                <tr>
+                    <td>
+                        <img id="aiartimg" alt="aiartimg" src="assets/moonthief.PNG"
+                            style="max-width: 750px; max-height: 50vw;">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="aiartname" style="color: #FFFFFF; text-align: center;">Moon Thief</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- These buttons are driven by a function which is looking for a click event. When Next is clicked it runs a function which
+                        increment the index from the current index number. When Last is clicked it runs a function which decrement the index from the
+                        current index number. -->
+                        <p style="text-align: center;"><button type="button" class="btn btn-primary bg-sm" id="artbtnb"
+                                style="background-color: #003459; color: #00A7E1; font-family: Source Code Pro, serif; border: none; max-width: 15vw;">Last
+                            </button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" class="btn btn-primary bg-sm"
+                                id="artbtn"
+                                style="background-color: #003459; color: #00A7E1; font-family: Source Code Pro, serif; border: none; max-width: 15vw;">Next
+                            </button></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>I would like to state that I understand the issue surrounding AI art generation and the threat it could pose
+            to real artists. I am of the opinion artists should be compensated when their style is used, somewhat like a
+            royalty for subscription services. To add, I think it should be more so used for inspiration. For example,
+            Moon Thief is an inspiration for a book I want to write, however I will never even think about using the
+            image for profit.</h3>
+    </div>
+</body>
+
+</html>
