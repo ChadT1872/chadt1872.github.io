@@ -6,7 +6,7 @@ function date_time(e) {
     // to a minute if needed, as well as set the meridiem, change the time to 12 hour standard, and add the ordinal to the time.
     var date = new Date();
     var day = date.getDate()
-    var hour = date.getHours()
+    var hour =date.getHours()
     var minute = date.getMinutes()
     var second = date.getSeconds()
     var monthname = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -23,10 +23,10 @@ function date_time(e) {
     else if (hour >= 12) {
         var meridiem = "PM"
     }
-    if (hour != 0) {
+    if (hour != 0 && hour != 12) {
         hour = hour % 12
     }
-    else if (hour === 0) {
+    else if (hour === 0 || hour === 12) {
         hour = 12
     }
     if (day > 13 || day < 11) {
@@ -85,6 +85,3 @@ document.addEventListener("DOMContentLoaded", function () { date_time() });
 if (document.URL.includes("aiart.html")) {
     document.addEventListener("DOMContentLoaded", function () { loadArt() });
 }
-
-
-
