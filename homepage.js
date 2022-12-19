@@ -6,7 +6,7 @@ function date_time(e) {
     // to a minute if needed, as well as set the meridiem, change the time to 12 hour standard, and add the ordinal to the time.
     var date = new Date();
     var day = date.getDate()
-    var hour =date.getHours()
+    var hour = date.getHours()
     var minute = date.getMinutes()
     var second = date.getSeconds()
     var monthname = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
