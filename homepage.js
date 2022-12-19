@@ -64,7 +64,6 @@ function loadArt(e) {
         if (n >= artsources.length) {
             n = 0;
         }
-        console.log(n)
         img.src = artsources[n];
         imgtext.innerHTML = artname[n];
     }
@@ -76,7 +75,6 @@ function loadArt(e) {
         if (n === artsources.length) {
             n = artsources.length - 1;
         }
-        console.log(n)
         img.src = artsources[n];
         imgtext.innerHTML = artname[n];
     }
