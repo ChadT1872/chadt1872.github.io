@@ -116,9 +116,9 @@ h4 {
 }
 
 .titlepic {
-    max-width: 20vw;
+    max-width: 45vw;
+    max-height: 45vw;
     margin-left: 6px;
-    padding-bottom: 15px;
 
 }
 
