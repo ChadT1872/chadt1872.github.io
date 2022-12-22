@@ -59,6 +59,8 @@ function loadArt(e) {
     var artname = ["Moon Thief", "Older Moon Thief", "Space Animals", "Scribing on the Walls", "old man", "Kid & Monster", "Kid & Monster: 2nd Evolution", "Grim Reaper", "Grim Reaper 2", "Library Ghost", "Egyptian Bald", "Humanoid Diseases", "Bohdi Space Tree", "Submarine Blood"];
     var img = document.getElementById("aiartimg");
     var imgtext = document.getElementById("aiartname");
+    var ref = document.getElementById("clickaiart");
+    ref.setAttribute("href", artsources[0])
     function next_art(e) {
         n++;
         if (n >= artsources.length) {
@@ -66,6 +68,7 @@ function loadArt(e) {
         }
         img.src = artsources[n];
         imgtext.innerHTML = artname[n];
+        ref.setAttribute("href", artsources[n]);
     }
     function previous_art(e) {
         n--;
@@ -77,6 +80,7 @@ function loadArt(e) {
         }
         img.src = artsources[n];
         imgtext.innerHTML = artname[n];
+        ref.setAttribute("href", artsources[n]);
     }
     document.getElementById("artbtn").addEventListener("click", function () { next_art() });
     document.getElementById("artbtnb").addEventListener("click", function () { previous_art() });
