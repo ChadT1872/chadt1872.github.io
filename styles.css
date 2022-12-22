@@ -91,7 +91,14 @@ h4 {
     margin: 15px;
     font-size: 10px;
     font-family: 'Source Code Pro', serif;
-    user-select: none
+    user-select: none;
+}
+
+.navbar {
+    max-height: 40vw;
+    background-color: #003459;
+    overflow: hidden;
+    transition: 0.4s;
 }
 
 .nav-link:hover {
@@ -105,9 +112,6 @@ h4 {
 }
 
 
-.nav_text {
-    color: #FFFFFF;
-}
 
 .nav-link {
     color: #FFFFFF;
@@ -122,12 +126,12 @@ h4 {
     margin: 25px;
     color: #00A7E1;
     font-family: 'Source Code Pro', serif;
-    user-select: none
+    user-select: none;
 }
 
 .titletext {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 8px;
     font-family: "Indie Flower", serif;
     color: #00A7E1;
     user-select: none;
@@ -135,15 +139,11 @@ h4 {
 }
 
 
-#aboutnav:hover {
-    font-size: 9px;
-}
-
 #careerdesc {
     color: #00A7E1;
     font-size: 24px;
     font-family: "Source Code Pro", serif;
-    user-select: none
+    user-select: none;
 }
 
 #page_body {
@@ -154,5 +154,47 @@ h4 {
 #ulnav {
     display: flex;
     flex-direction: row;
-    padding-left: 25px;
+    padding-left: 8vw;
+    margin-top: -25px;
+
 }
+
+@media screen and (max-width: 580px) {
+    .titletext {
+        text-align: center;
+        padding-top: 0px;
+        font-family: "Indie Flower", serif;
+        color: #00A7E1;
+        user-select: none;
+        font-size: 24px;
+    }
+
+    .time {
+        text-align: center;
+        padding-left: 110px;
+        margin: 25px;
+        color: #00A7E1;
+        font-family: 'Source Code Pro', serif;
+        user-select: none;
+        font-size: 14px;
+        padding-left: 125px
+    }
+
+    .nav-link {
+        color: #FFFFFF;
+        font-size: 10px;
+        font-family: 'Source Code Pro', serif;
+        margin-left: -10px;
+        margin-top: 10px;
+        margin-bottom: -10px;
+        padding-bottom: 0px;
+    }
+
+    .navbar {
+        max-height: 30vw;
+        background-color: #003459;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    }
