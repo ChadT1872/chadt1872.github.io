@@ -46,7 +46,7 @@ function date_time(e) {
         var time = hour + ":" + minute + ":" + second + " " + meridiem;
         document.getElementById("time").innerHTML = time;
         document.getElementById("date").innerHTML = today;
-        t = setTimeout(function () { date_time() }, 1000);
+        t = setTimeout(function () { date_time() }, 500);
     }
 }
 
